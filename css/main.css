@@ -1,0 +1,66 @@
+* {
+  outline: 1px solid red;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 4.5rem 1rem;
+  width: 90%;
+}
+
+.form {
+  width: 90%;
+  border: 2px solid;
+  border-color: blue;
+  display: grid;
+  grid-template-columns: 2rem 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "dayL monthL yearL" "day  month  year";
+}
+.form__label {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 8%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.form__input {
+  background-color: orange;
+}
+.form__dayLabel {
+  grid-area: dayL;
+  background-color: beige;
+}
+.form__day {
+  grid-area: day;
+}
+.form__monthLabel {
+  grid-area: monthL;
+}
+.form__month {
+  grid-area: month;
+}
+.form__yearL {
+  grid-area: yearL;
+}
+.form__year {
+  grid-area: year;
+}
+
+.form_input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+$Primary-200: hsl(259, 100%, 65%);
+$Primary-100: hsl(0, 100%, 67%);
+
+$Neutral-100: hsl(0, 0%, 100%);
+$Neutral-200: hsl(0, 0%, 94%);
+$Neutral-300: hsl(0, 0%, 86%);
+$Neutral-400: hsl(0, 1%, 44%);
+$Neutral-500: hsl(0, 0%, 8%);
+* {
+    outline: 1px solid red;
+}
+body {
+  background-color: $Neutral-200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: $Neutral-100;
+  border-radius: 1rem 1rem 4.5rem 1rem;
+  width: 90%;
+}
+.form {
+    width: 90%;
+    border: 2px solid;
+    border-color: blue;
+  display: grid;
+  grid-template-columns: 2rem 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "dayL monthL yearL"
+    "day  month  year";
+  &__label {
+    text-transform: uppercase;
+    color: $Neutral-500;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  &__input {
+    background-color: orange;
+  }
+  &__dayLabel {
+    grid-area: dayL;
+    background-color: beige;
+  }
+  &__day {
+    grid-area: day;
+  }
+  &__monthLabel {
+    grid-area: monthL;
+  }
+  &__month {
+    grid-area: month;
+  }
+  &__yearL {
+    grid-area: yearL;
+  }
+  &__year {
+    grid-area: year;
+  }
+}
+.form_input {
+    width: max-content;
+}
