@@ -1,9 +1,6 @@
-* {
-  outline: 1px solid red;
-}
-
 body {
   background-color: hsl(0, 0%, 94%);
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,49 +15,84 @@ body {
 main {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem 1rem 4.5rem 1rem;
-  width: 90%;
+  width: 345px;
+  padding: 2rem 0;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.form {
-  width: 90%;
-  border: 2px solid;
-  border-color: blue;
-  display: grid;
-  grid-template-columns: 2rem 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "dayL monthL yearL" "day  month  year";
-}
-.form__label {
+.table {
+  border-collapse: separate;
+  border-spacing: 0.7rem 0.3rem;
   text-transform: uppercase;
   color: hsl(0, 0%, 8%);
-  font-weight: 400;
+  width: 90%;
+}
+.table__labelWrapper {
+  text-align: left;
+  font-weight: 500;
   font-size: 0.9rem;
 }
-.form__input {
-  background-color: orange;
+.table input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0.7rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 5.8rem;
 }
-.form__dayLabel {
-  grid-area: dayL;
-  background-color: beige;
-}
-.form__day {
-  grid-area: day;
-}
-.form__monthLabel {
-  grid-area: monthL;
-}
-.form__month {
-  grid-area: month;
-}
-.form__yearL {
-  grid-area: yearL;
-}
-.form__year {
-  grid-area: year;
+.table input:focus {
+  outline: none;
 }
 
-.form_input {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.btnWrapper {
+  margin: 2.5rem auto 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96%;
+}
+.btnWrapper hr {
+  background-color: hsl(0, 0%, 86%);
+  border: none;
+  height: 1px;
+  width: inherit;
+}
+.btnWrapper__btn {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../assets/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2rem;
+  background-color: hsl(259, 100%, 65%);
+  margin: 1rem auto;
+  border: none;
+  border-radius: 50%;
+  width: 3.5rem;
+  aspect-ratio: 1;
+}
+
+.output {
+  color: hsl(0, 0%, 8%);
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.output__numbers {
+  color: hsl(259, 100%, 65%);
+  padding-right: 0.6rem;
 }/*# sourceMappingURL=main.css.map */

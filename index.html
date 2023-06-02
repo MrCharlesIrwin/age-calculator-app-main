@@ -17,22 +17,44 @@
   <body>
     <main class="main">
       <form action="#" class="form">
-        
-        <label for="day" class="form__dayLabel form__label">Day</label>
-        <input type="text" placeholder="DD" id="day" class="form__day form_input" />
-
-        <label for="month" class="form__monthLabel form__label">Month</label>
-        <input type="text" placeholder="MM" id="month" class="form__month form_input" />
-
-        <label for="year" class="form__yearLabel form__label">Year</label>
-        <input type="text" placeholder="YYYY" id="year" class="form__year form_input" />
-
-        <!-- <input type="submit" id="submit" /> -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__labelWrapper">
+                <label for="day">Day</label>
+              </th>
+              <th class="table__labelWrapper">
+                <label for="month">Month</label>
+              </th>
+              <th class="table__labelWrapper">
+                <label for="year">Year</label>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="text" placeholder="DD" id="day" />
+              </td>
+              <td>
+                <input type="text" placeholder="MM" id="month" />
+              </td>
+              <td>
+                <input type="text" placeholder="YYYY" id="year" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </form>
-
-      <p><stron>--</stron>years</p>
-      <p><stong>--</stong> months</p>
-      <p><strong>--</strong>days</p>
-    </main>
+      <div class="btnWrapper">
+        <hr>
+        <input type="submit" value="" id="submit" class="btnWrapper__btn" >
+      </div>
+<div class="output">
+  <p><strong class="output__numbers" >--</strong>years</p>
+  <p><strong class="output__numbers">--</strong> months</p>
+  <p><strong class="output__numbers">--</strong>days</p>
+</main>
+</div>
   </body>
 </html>
